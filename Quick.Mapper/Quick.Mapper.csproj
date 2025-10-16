@@ -1,14 +1,46 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <Version>8.0.0</Version>
+        <LangVersion>latest</LangVersion>
+        
+        <!-- Versiones -->
+        <Version>8.0.1</Version>
+        <AssemblyVersion>8.0.1.0</AssemblyVersion>
+        <FileVersion>8.0.1.0</FileVersion>
+        
+        <!-- Información del paquete -->
+        <PackageId>Quick.Mapper</PackageId>
+        <Title>Quick.Mapper</Title>
+        <Authors>Quick.Mapper Contributors</Authors>
+        <Company>Quick.Mapper</Company>
+        <Description>Un mapper rápido y eficiente para .NET, con API idéntica a AutoMapper pero optimizado para rendimiento. Incluye mapeos automáticos, perfiles, ReverseMap, y soporte completo para Dependency Injection.</Description>
+        
+        <!-- URLs -->
+        <PackageProjectUrl>https://github.com/GFernando98/Quick.Mapper</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/GFernando98/Quick.Mapper.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        
+        <!-- Metadata -->
+        <PackageTags>mapper;mapping;automapper;object-mapper;quickmapper;dotnet;nuget;library;performance</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageReleaseNotes>Version 8.0.1 - Incluye metadata completa, README y documentación. API 100% compatible con AutoMapper.</PackageReleaseNotes>
+        
+        <!-- Configuración -->
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    </ItemGroup>
+    
+    <!-- Incluye README.md en el paquete -->
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\" />
     </ItemGroup>
 
 </Project>
