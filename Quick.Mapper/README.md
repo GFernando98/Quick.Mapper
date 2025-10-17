@@ -32,7 +32,7 @@ dotnet add package Quick.Mapper
 
 ### Via PackageReference
 ```xml
-<PackageReference Include="Quick.Mapper" Version="1.0.0" />
+<PackageReference Include="Quick.Mapper" Version="8.0.1" />
 ```
 
 ## 🚀 Inicio Rápido
